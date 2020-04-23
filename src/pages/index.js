@@ -9,7 +9,7 @@ const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     {props.data.allImageSharp.edges.map(({ node: { fixed } }, idx) => (
-      <Img key={idx} fixed={fixed} />
+      <Img key={idx} fixed={fixed} critical={idx < 10} />
     ))}
   </Layout>
 );
