@@ -20,7 +20,7 @@ query MyImages {
     edges {
       node {
         fixed(width: 310, traceSVG: {color: "#7F187F"}) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
